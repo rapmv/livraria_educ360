@@ -12,7 +12,6 @@ public class Livro {
     }
     
 	public Livro(String titulo, String autor, String isbn, double preco) {
-		super();
 		this.titulo = titulo;
 		this.autor = autor;
 		this.isbn = isbn;

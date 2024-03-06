@@ -1,5 +1,6 @@
 package br.com.cdb.livraria;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -13,6 +14,11 @@ public class Main {
 		
 		
 		
+		ListaLivro criarLista = new ListaLivro();
+		//Lista livro Fisico
+		ArrayList<LivroFisico> listaLivroFisico = criarLista.criarListaLivroFisico();
+		//Lista livro Ebook
+		ArrayList<LivroEbook> listaLivroEbook = criarLista.criarListaLivroEbook();
 		
 		int loop = -1;
 		int opcao;
