@@ -1,5 +1,7 @@
 package br.com.cdb.livraria;
 
+import java.util.Objects;
+
 public class LivroFisico extends Livro{
 
 	private double peso;
@@ -34,5 +36,10 @@ public class LivroFisico extends Livro{
 	@Override
 	public double calcularPrecoTotal() {
 		return preco+frete;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() + ", Peso = " +  String.format("%.2f", peso);
 	}
 }

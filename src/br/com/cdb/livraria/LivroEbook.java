@@ -1,5 +1,7 @@
 package br.com.cdb.livraria;
 
+import java.util.Objects;
+
 public class LivroEbook extends Livro{
 
 	private double tamanhoEmMb;
@@ -19,6 +21,12 @@ public class LivroEbook extends Livro{
 
 	public void setTamanhoEmMb(double tamanhoEmMb) {
 		this.tamanhoEmMb = tamanhoEmMb;
+	}
+
+	@Override
+	public String toString() {
+		
+		return super.toString()+ ", Tamanho do Arquivo="+ String.format("%.3f", tamanhoEmMb);
 	}
 	
 	
